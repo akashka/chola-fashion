@@ -1,0 +1,29 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+ #Added by HostingRaja Security team, Please do not edit below.
+ #For Support contact support@hostingraja.in
+ #Uninstall vulnarable plugins from your WordPress
+ <Files *.php>
+ 	Order Deny,Allow
+ 	Deny from all
+ </Files>
+ <Files index.php>
+ 	Order Allow,Deny
+ 	Allow from all
+ </Files>
+ <Files wp-login.php>
+ 	Order Allow,Deny
+ 	Allow from all
+ </Files>
+

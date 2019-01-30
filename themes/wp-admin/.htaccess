@@ -1,0 +1,15 @@
+
+ #Added by HostingRaja Security team, Please do not edit below.
+ #For Support contact support@hostingraja.in
+ #Your password seems weak, Ensure to have a strong password
+ #Uninstall vulnarable plugins from your WordPress
+ 
+ <Files *.php>
+ Order Deny,Allow
+ Deny from all
+ </Files>
+ <Files ~ "^(about|admin-ajax|admin-footer|admin-functions|admin-header|admin|admin-post|async-upload|comment|credits|custom-background|custom-header|customize|edit-comments|edit-form-advanced|edit-form-comment|edit-link-form|edit|edit-tag-form|edit-tags|export|freedoms|import|index|install-helper|install|link-add|link-manager|link-parse-opml|link|load-scripts|load-styles|media-new|media|media-upload|menu-header|menu|moderation|ms-admin|ms-delete-site|ms-edit|ms-sites|ms-options|ms-themes|ms-upgrade-network|ms-users|my-sites|nav-menus|network|options-discussion|options-general|options-head|options-media|options-permalink|options|options-reading|options-writing|plugin-editor|plugin-install|plugins|post-new|post|press-this|profile|revision|setup-config|theme-editor|theme-install|themes|tools|update-core|update|upgrade-functions|upgrade|upload|user-edit|user-new|users|widgets)\.php$">
+ Order Allow,Deny
+ Allow from all
+ </Files>
+
